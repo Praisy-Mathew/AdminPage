@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <title>Admin Panel - Online Taxi Booking</title>
+  <!-- loader-->
+  <link href="assets/css/pace.min.css" rel="stylesheet"/>
+  <script src="assets/js/pace.min.js"></script>
+  <!--favicon-->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <!-- Vector CSS -->
+  <link href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet"/>
+  <!-- simplebar CSS-->
+  <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
+  <!-- Bootstrap core CSS-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- animate CSS-->
+  <link href="assets/css/animate.css" rel="stylesheet" type="text/css"/>
+  <!-- Icons CSS-->
+  <link href="assets/css/icons.css" rel="stylesheet" type="text/css"/>
+  <!-- Sidebar CSS-->
+  <link href="assets/css/sidebar-menu.css" rel="stylesheet"/>
+  <!-- Custom Style-->
+  <link href="assets/css/app-style.css" rel="stylesheet"/>
+  
+</head>
+
+<body class="bg-theme bg-theme1">
+ 
+<!-- Start wrapper-->
+ <div id="wrapper">
+    <div class="dropdown">
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownTrips" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 15px; text-decoration: none; font-size: 18px; color: #ddd; display: block;">
+          Trips
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownTrips">
+          <a class="dropdown-item" href="#" id="activeTripsLink">Active Trips</a>
+          <a class="dropdown-item" href="#" id="completedTripsLink">Completed Trips</a>
+          <a class="dropdown-item" href="#" id="pendingTripsLink">Pending Trips</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="content" style="margin-left: 260px; padding: 20px;">
+      <h2>Trips Management</h2>
+  
+      <!-- Active Trips Table -->
+      <div id="activeTrips" class="trip-table">
+        <h3>Active Trips</h3>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Driver</th>
+              <th>Customer</th>
+              <th>Start Location</th>
+              <th>End Location</th>
+              <th>Fare</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Active trip rows here -->
+          </tbody>
+        </table>
+      </div>
+  
+      <!-- Completed Trips Table -->
+      <div id="completedTrips" class="trip-table" style="display:none;">
+        <h3>Completed Trips</h3>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Driver</th>
+              <th>Customer</th>
+              <th>Start Location</th>
+              <th>End Location</th>
+              <th>Fare</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Completed trip rows here -->
+          </tbody>
+        </table>
+      </div>
+  
+      <!-- Pending Trips Table -->
+      <div id="pendingTrips" class="trip-table" style="display:none;">
+        <h3>Pending Trips</h3>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Driver</th>
+              <th>Customer</th>
+              <th>Start Location</th>
+              <th>End Location</th>
+              <th>Fare</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Pending trip rows here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Function to show the selected trip table and hide others
+      function showTripTable(tableId) {
+        $('.trip-table').hide();
+        $(tableId).show();
+      }
+  
+      // Event listeners for dropdown items
+      $('#activeTripsLink').click(function() {
+        showTripTable('#activeTrips');
+      });
+  
+      $('#completedTripsLink').click(function() {
+        showTripTable('#completedTrips');
+      });
+  
+      $('#pendingTripsLink').click(function() {
+        showTripTable('#pendingTrips');
+      });
+    });
+  </script>
+  
+  </body>
+  </html>
+  
+ 
