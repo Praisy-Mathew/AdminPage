@@ -59,7 +59,7 @@
      <div class="brand-logo">
       <a href="index.html">
        <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
-       <h5 class="logo-text">Dashtreme Admin</h5>
+       <h5 class="logo-text">Online Taxi</h5>
      </a>
    </div>
    <ul class="sidebar-menu do-nicescrol">
@@ -99,7 +99,12 @@
       </li>
       <li>
         <a href="about.html">
-          <i class="zmdi zmdi-grid"></i> <span>About</span>
+          <i class="zmdi zmdi-grid"></i> <span>Services</span>
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">
+          <i class="zmdi zmdi-grid"></i> <span>Contact</span>
         </a>
       </li>
 
@@ -117,17 +122,9 @@
         </a>
       </li>
 
-      <li>
-        <a href="login.html" target="_blank">
-          <i class="zmdi zmdi-lock"></i> <span>Login</span>
-        </a>
-      </li>
+      
 
-       <li>
-        <a href="register.html" target="_blank">
-          <i class="zmdi zmdi-account-circle"></i> <span>Registration</span>
-        </a>
-      </li>
+       
 	  
 
       <li class="sidebar-header">LABELS</li>
@@ -210,47 +207,109 @@
 	
   <div class="content-wrapper">
     <div class="container-fluid">
-     
-      <div class="row mt-3">
-        <div class="col-lg-8">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Vehicle Details</h5>
-			  <div class="table-responsive">
-                <div class="vehicle-box">
-                    <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editVehicleModal" data-id="1" data-model="Toyota Prius" data-license="ABC-1234" data-color="White" data-status="Active" data-image="vehicle1.jpg">Edit</button>
-                    <img src="https://5.imimg.com/data5/QO/CY/CB/SELLER-80729603/suv-cab.png" alt="Vehicle Image" class="vehicle-image">
+     <h3>Car Details</h3>
+      <div class="container">
+        <div class="row">
+        <div class="col-12 text-right mt-4">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCarModal">Add New Car</button>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 ">
+                    <div class="vehicle-box">
+                    <img src="https://5.imimg.com/data5/QO/CY/CB/SELLER-80729603/suv-cab.png" alt="Vehicle Image" class="vehicle-image" >
+                    <div class="card-body" text-align="center">
                     <p><strong>Vehicle ID:</strong> 1</p>
                     <p><strong>Model:</strong>SUV</p>
                     <p><strong>License Plate:</strong> ABC-1234</p>
                     <p><strong>Color:</strong> White</p>
                     <p><strong>Status:</strong> Active</p>
-            
-                </div>
-                <div class="vehicle-box">
-                    <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editVehicleModal" data-id="1" data-model="Toyota Prius" data-license="ABC-1234" data-color="White" data-status="Active" data-image="vehicle1.jpg">Edit</button>
-                    <img src="https://sara.cab/wp-content/uploads/2015/05/sedan-cheverlot-480x320.png" alt="Vehicle Image" class="vehicle-image">
-                    <p><strong>Vehicle ID:</strong> 2</p>
-                    <p><strong>Model:</strong>SEDAN</p>
-                    <p><strong>License Plate:</strong> ABC-1234</p>
-                    <p><strong>Color:</strong> White</p>
-                    <p><strong>Status:</strong> Active</p>
-                </div>
-                <div class="vehicle-box">
-                    <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editVehicleModal" data-id="1" data-model="Toyota Prius" data-license="ABC-1234" data-color="White" data-status="Active" data-image="vehicle1.jpg">Edit</button>
-                    <img src="https://sara.cab/wp-content/uploads/2015/05/sedan-etios--480x320.png" class="product-img" alt="product img"></td>
-                    <p><strong>Vehicle ID:</strong> 3</p>
-                    <p><strong>Model:</strong>Crossover</p>
-                    <p><strong>License Plate:</strong> ABC-1234</p>
-                    <p><strong>Color:</strong>Black</p>
-                    <p><strong>Status:</strong> Active</p>
-                </div>
-        
-            <!-- Add New Vehicle Button -->
-            <button class="btn btn-success mt-4" data-toggle="modal" data-target="#addVehicleModal">Add New Vehicle</button>
+                    <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editVehicleModal" data-id="1">Edit</button>
+                 </div>
+                 </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 ">
+          <div class="vehicle-box">
+          <img src="https://sara.cab/wp-content/uploads/2015/05/sedan-cheverlot-480x320.png" alt="Vehicle Image" class="vehicle-image" >
+          <div class="card-body" text-align="center">
+          <p><strong>Vehicle ID:</strong>2</p>
+          <p><strong>Model:</strong>SEDAN</p>
+          <p><strong>License Plate:</strong> ABC-4577</p>
+          <p><strong>Color:</strong> White</p>
+          <p><strong>Status:</strong> Active</p>
+          <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editVehicleModal" data-id="2">Edit</button>
+       </div>
+       </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4 ">
+  <div class="vehicle-box">
+  <img src="https://sara.cab/wp-content/uploads/2015/05/sedan-etios--480x320.png" alt="Vehicle Image" class="vehicle-image" >
+  <div class="card-body" text-align="center">
+  <p><strong>Vehicle ID:</strong>3</p>
+  <p><strong>Model:</strong>CROSSOVER</p>
+  <p><strong>License Plate:</strong> ABC-1234</p>
+  <p><strong>Color:</strong> White</p>
+  <p><strong>Status:</strong> Active</p>
+  <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editVehicleModal" data-id="3">Edit</button>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4 ">
+  <div class="vehicle-box">
+  <img src="https://sara.cab/wp-content/uploads/2015/05/sedan-cheverlot-480x320.png" alt="Vehicle Image" class="vehicle-image" >
+  <div class="card-body" text-align="center">
+  <p><strong>Vehicle ID:</strong>4</p>
+  <p><strong>Model:</strong>SUV</p>
+  <p><strong>License Plate:</strong> ABC-1234</p>
+  <p><strong>Color:</strong> White</p>
+  <p><strong>Status:</strong> Active</p>
+  <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editVehicleModal" data-id="1">Edit</button>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4 ">
+  <div class="vehicle-box">
+  <img src="https://sara.cab/wp-content/uploads/2015/05/sedan-etios--480x320.png" alt="Vehicle Image" class="vehicle-image" >
+  <div class="card-body" text-align="center">
+  <p><strong>Vehicle ID:</strong>5</p>
+  <p><strong>Model:</strong>SUV</p>
+  <p><strong>License Plate:</strong> ABC-1234</p>
+  <p><strong>Color:</strong> White</p>
+  <p><strong>Status:</strong> Active</p>
+  <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editVehicleModal" data-id="1">Edit</button>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4 ">
+  <div class="vehicle-box">
+  <img src="https://5.imimg.com/data5/QO/CY/CB/SELLER-80729603/suv-cab.png" alt="Vehicle Image" class="vehicle-image" >
+  <div class="card-body" text-align="center">
+  <p><strong>Vehicle ID:</strong>6</p>
+  <p><strong>Model:</strong>SUV</p>
+  <p><strong>License Plate:</strong> ABC-1234</p>
+  <p><strong>Color:</strong> White</p>
+  <p><strong>Status:</strong> Active</p>
+  <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editVehicleModal" data-id="1">Edit</button>
+</div>
+</div>
+</div>
 
-            <!-- Edit Vehicle Modal -->
-            
+<script>
+  document.addEventListener('DOMContentLoaded',function(){
+  // Event listeners for edit buttons
+  document.querySelectorAll('.edit-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      const card = this.closest('.card'); // Adjust selector if necessary
+      const cardTitle = card.querySelector('.card-title').innerText.split('\n');
+      const carName = cardTitle[0].trim();
+      const carPrice = cardTitle[1].trim().replace('₹', '').replace('/day', '');
+
+      // Populate edit form
+      document.getElementById('editCarName').value = carName;
+      document.getElementById('editCarPrice').value = carPrice;
+      document.getElementById('editCarId').value = this.getAttribute('data-id'); // Store card id
+    });
+  });
+});
+  </script>
                    
 
       

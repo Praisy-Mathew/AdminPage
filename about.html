@@ -35,7 +35,7 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgba(0, 0, 139, 0.8); /* Dark blue background with some transparency */
+       /* Dark blue background with some transparency */
         }
 
         .modal-content {
@@ -57,7 +57,6 @@
 
         .close:hover,
         .close:focus {
-            color: rgb(19, 39, 150);
             text-decoration: none;
             cursor: pointer;
         }
@@ -66,7 +65,6 @@
         .modal-footer {
             padding: 10px;
             color: white;
-            background-color: #1b37b1;
             border-bottom: 1px solid #888;
         }
 
@@ -77,7 +75,7 @@
 
         .btn {
             padding: 10px 20px;
-            background-color: #10096e;
+            background-color:;
             color: white;
             border: none;
             cursor: pointer;
@@ -166,12 +164,15 @@
       </li>
       <li>
         <a href="about.html">
-          <i class="zmdi zmdi-grid"></i> <span>About</span>
+          <i class="zmdi zmdi-grid"></i> <span>Services</span>
         </a>
       </li>
-
-
       <li>
+        <a href="contact.html">
+          <i class="zmdi zmdi-grid"></i> <span>Contact</span>
+        </a>
+      </li>
+       <li>
         <a href="calendar.html">
           <i class="zmdi zmdi-calendar-check"></i> <span>Calendar</span>
           <small class="badge float-right badge-light">New</small>
@@ -184,17 +185,8 @@
         </a>
       </li>
 
-      <li>
-        <a href="login.html" target="_blank">
-          <i class="zmdi zmdi-lock"></i> <span>Login</span>
-        </a>
-      </li>
+    
 
-       <li>
-        <a href="register.html" target="_blank">
-          <i class="zmdi zmdi-account-circle"></i> <span>Registration</span>
-        </a>
-      </li>
 	  
 
       <li class="sidebar-header">LABELS</li>
@@ -279,28 +271,50 @@
     <div class="container-fluid">
      
       <div class="row mt-3">
-        <div class="col-lg-8">
+        <div class="col-lg-12">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Services</h5>
+              <h3>Services</h3>
+              <div class="col-12 text-right mt-4">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCarModal">Add New Car</button>
+              </div>
                 <div class="vehicle-box">
                     <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editVehicleModal" data-id="1" data-model="Toyota Prius" data-license="ABC-1234" data-color="White" data-status="Active" data-image="vehicle1.jpg">Edit</button>
-                    <h3><strong>Instant Booking</strong></h3>
+                    <h4><strong>Instant Booking</strong></h4>
                     <p>In an online taxi booking system, the Instant Booking service allows users to quickly book a ride without any delays. This service is particularly useful for users who need to arrange transportation immediately. </p>
                 </div>
                 <div class="vehicle-box">
                     <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editVehicleModal" data-id="1" data-model="Toyota Prius" data-license="ABC-1234" data-color="White" data-status="Active" data-image="vehicle1.jpg">Edit</button>
-                    <h3><strong>Safe and Secure</strong></h3>
+                    <h4><strong>Safe and Secure</strong></h4>
                     <p>ensuring the safety and security of users is of paramount importance. The Safe and Secure service focuses on providing a reliable and trustworthy experience for all passenger</p>
                 </div>
                 <div class="vehicle-box">
                     <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editVehicleModal" data-id="1" data-model="Toyota Prius" data-license="ABC-1234" data-color="White" data-status="Active" data-image="vehicle1.jpg">Edit</button>
-                    <h3><strong>Affordable Rates</strong></h3>
+                    <h4><strong>Affordable Rates</strong></h4>
                     <p>offering affordable rates is essential to attract and retain customers. This feature ensures that users get competitive and transparent pricing for their rides, making your service appealing to a wider audience.</p>
                 </div>
+                <div class="vehicle-box">
+                  <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editVehicleModal" data-id="1" data-model="Toyota Prius" data-license="ABC-1234" data-color="White" data-status="Active" data-image="vehicle1.jpg">Edit</button>
+                  <h4><strong>Sustainability</strong></h4>
+                  <p>We are committed to reducing our environmental footprint. Choose our eco-friendly vehicles and contribute to a greener planet.</p>
+              </div>
+              <div class="vehicle-box">
+                <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editVehicleModal" data-id="1" data-model="Toyota Prius" data-license="ABC-1234" data-color="White" data-status="Active" data-image="vehicle1.jpg">Edit</button>
+                <h4><strong>24/7 Availability</strong></h4>
+               <p>Our dedicated customer support team is available around the clock to assist you with any queries or issues. Contact us anytime, and we’ll be happy to help.</p>
+               </div>
+            <div class="vehicle-box">
+              <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editVehicleModal" data-id="1" data-model="Toyota Prius" data-license="ABC-1234" data-color="White" data-status="Active" data-image="vehicle1.jpg">Edit</button>
+              <h4><strong>Scheduled Rides</strong></h4>
+              <p>Plan your trips ahead of time with our scheduled ride feature. Whether it’s for an early morning flight or an important meeting, you can book your ride in advance and have peace of mind.</p>
+              </div>
+          <div class="vehicle-box">
+            <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editVehicleModal" data-id="1" data-model="Toyota Prius" data-license="ABC-1234" data-color="White" data-status="Active" data-image="vehicle1.jpg">Edit</button>
+            <h4><strong>User-Friendly Interface</strong></h4>
+            <p>Our app and website are designed with the user in mind, offering an intuitive and seamless booking experience from start to finish.</p>
+            </div>
         
-            <!-- Add New Vehicle Button -->
-<button id="addServiceBtn" class="btn">Add New Service</button>
+        
 
 
               

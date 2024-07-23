@@ -26,6 +26,64 @@
   <link href="assets/css/sidebar-menu.css" rel="stylesheet"/>
   <!-- Custom Style-->
   <link href="assets/css/app-style.css" rel="stylesheet"/>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.head{
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.recent-activity {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.recent-activity h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color:white
+}
+
+.activity-list li {
+    color: #fff; 
+    padding: 10px 0;
+    border-bottom: 1px solid;
+}
+
+.activity-list li:last-child {
+    border-bottom: none;
+}
+
+.activity-time {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.activity-detail {
+    color:white;
+}
+</style>
 </head>
 
 <body class="bg-theme bg-theme1">
@@ -46,7 +104,7 @@
       <div class="brand-logo">
         <a href="index.html">
          <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
-         <h5 class="logo-text">Dashtreme Admin</h5>
+         <h5 class="logo-text">Online Taxi</h5>
        </a>
      </div>
      <ul class="sidebar-menu do-nicescrol">
@@ -85,7 +143,12 @@
       </li>
       <li>
         <a href="about.html">
-          <i class="zmdi zmdi-grid"></i> <span>About</span>
+          <i class="zmdi zmdi-grid"></i> <span>Services</span>
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">
+          <i class="zmdi zmdi-grid"></i> <span>Contact</span>
         </a>
       </li>
 
@@ -102,17 +165,7 @@
         </a>
       </li>
 
-      <li>
-        <a href="login.html" target="_blank">
-          <i class="zmdi zmdi-lock"></i> <span>Login</span>
-        </a>
-      </li>
-
-       <li>
-        <a href="register.html" target="_blank">
-          <i class="zmdi zmdi-account-circle"></i> <span>Registration</span>
-        </a>
-      </li>
+  
 
       <li class="sidebar-header">LABELS</li>
       <li><a href="javaScript:void();"><i class="zmdi zmdi-coffee text-danger"></i> <span>Important</span></a></li>
@@ -240,192 +293,56 @@
     </div>
  </div>  
 	  
-	<div class="row">
-     <div class="col-12 col-lg-8 col-xl-8">
-	    <div class="card">
-		 <div class="card-header">Site visit
-		   <div class="card-action">
-			 <div class="dropdown">
-			 <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
-			  <i class="icon-options"></i>
-			 </a>
-				<div class="dropdown-menu dropdown-menu-right">
-				<a class="dropdown-item" href="javascript:void();">Action</a>
-				<a class="dropdown-item" href="javascript:void();">Another action</a>
-				<a class="dropdown-item" href="javascript:void();">Something else here</a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="javascript:void();">Separated link</a>
-			   </div>
-			  </div>
-		   </div>
-		 </div>
-		 <div class="card-body">
-		    <ul class="list-inline">
-			  <li class="list-inline-item"><i class="fa fa-circle mr-2 text-white"></i>New Visitor</li>
-			  <li class="list-inline-item"><i class="fa fa-circle mr-2 text-light"></i>Old Visitor</li>
-			</ul>
-			<div class="chart-container-1">
-			  <canvas id="chart1"></canvas>
-			</div>
-		 </div>
-		 
-		 <div class="row m-0 row-group text-center border-top border-light-3">
-		   <div class="col-12 col-lg-4">
-		     <div class="p-3">
-		       <h5 class="mb-0">45.87M</h5>
-			   <small class="mb-0">Overall Visitor <span> <i class="fa fa-arrow-up"></i> 2.43%</span></small>
-		     </div>
-		   </div>
-		   <div class="col-12 col-lg-4">
-		     <div class="p-3">
-		       <h5 class="mb-0">15:48</h5>
-			   <small class="mb-0">Visitor Duration <span> <i class="fa fa-arrow-up"></i> 12.65%</span></small>
-		     </div>
-		   </div>
-		   <div class="col-12 col-lg-4">
-		     <div class="p-3">
-		       <h5 class="mb-0">245.65</h5>
-			   <small class="mb-0">Pages/Visit <span> <i class="fa fa-arrow-up"></i> 5.62%</span></small>
-		     </div>
-		   </div>
-		 </div>
-		 
-		</div>
-	 </div>
-
-     <div class="col-12 col-lg-4 col-xl-4">
-        <div class="card">
-           <div class="card-header">Weekly Updates
-             <div class="card-action">
-             <div class="dropdown">
-             <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
-              <i class="icon-options"></i>
-             </a>
-              <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item" href="javascript:void();">Action</a>
-              <a class="dropdown-item" href="javascript:void();">Another action</a>
-              <a class="dropdown-item" href="javascript:void();">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="javascript:void();">Separated link</a>
-               </div>
-              </div>
-             </div>
-           </div>
-           <div class="card-body">
-		     <div class="chart-container-2">
-               <canvas id="chart2"></canvas>
-			  </div>
-           </div>
-           <div class="table-responsive">
-             <table class="table align-items-center">
-               <tbody>
-                 <tr>
-                   <td><i class="fa fa-circle text-white mr-2"></i>Total Rides</td>
-                   <td>5856</td>
-                   <td>+55%</td>
-                 </tr>
-                 <tr>
-                   <td><i class="fa fa-circle text-light-1 mr-2"></i>Revenue</td>
-                   <td>$2602</td>
-                   <td>+25%</td>
-                 </tr>
-                 <tr>
-                   <td><i class="fa fa-circle text-light-2 mr-2"></i>Active Drivers</td>
-                   <td>50</td>
-                   <td>+15%</td>
-                 </tr>
-                 <tr>
-                   <td><i class="fa fa-circle text-light-3 mr-2"></i>Ride Request</td>
-                   <td>1105</td>
-                   <td>+5%</td>
-                 </tr>
-               </tbody>
-             </table>
-           </div>
-         </div>
-     </div>
-	</div><!--End Row-->
 	
-	<div class="row">
-	 <div class="col-12 col-lg-12">
-	   <div class="card">
-	     <div class="card-header">
-        <h4>Fare Details</h4>
-		  <div class="card-action">
-             <div class="dropdown">
-             <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
-              <i class="icon-options"></i>
-             </a>
-              <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item" href="javascript:void();">Action</a>
-              <a class="dropdown-item" href="javascript:void();">Another action</a>
-              <a class="dropdown-item" href="javascript:void();">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="javascript:void();">Separated link</a>
-               </div>
-              </div>
-             </div>
-		 </div>
-	       <div class="table-responsive">
-                 <table class="table align-items-center table-flush table-borderless">
-                  <thead>
-                   <tr>
-                     <th>Cab Type</th>
-                     <th>Photo</th>
-                     <th>Price/km</th>
-                     <th>Price/Minute</th>
-                     <th>Base Fare</th>
-                   </tr>
-                   </thead>
-                   <tbody><tr>
-                    <td>SUV</td>
-                    <td><img src="https://5.imimg.com/data5/QO/CY/CB/SELLER-80729603/suv-cab.png" class="product-img" alt="product img"></td>
-                    <td>100</td>
-                    <td>10</td>
-                    <td>120</td>
-					
-                   </tr>
-
-                   <tr>
-                    <td>SEDAN</td>
-                    <td><img src="https://sara.cab/wp-content/uploads/2015/05/sedan-cheverlot-480x320.png" class="product-img" alt="product img"></td>
-                    <td>110</td>
-                    <td>20</td>
-                    <td>150</td>
-		
-                   </tr>
-
-                   <tr>
-                    <td>Crossover</td>
-                    <td><img src="https://sara.cab/wp-content/uploads/2015/05/sedan-etios--480x320.png" class="product-img" alt="product img"></td>
-                    <td>100</td>
-                    <td>30</td>
-                    <td>170</td>
-					
-
-                   <tr>
-                    <td>Coupe</td>
-                    <td><img src="https://sara.cab/wp-content/uploads/2015/05/sedan-cheverlot-480x320.png" class="product-img" alt="product img"></td>
-                    <td>80</td>
-                    <td>25</td>
-                    <td>110</td>
-					
-
-                   <tr>
-                    <td>Van</td>
-                    <td><img src="https://img.freepik.com/premium-photo/white-midsize-commercial-van-white-background-blank-body-applying-your-design-inscriptions-logos-3d-illustration_101266-22644.jpg?size=626&ext=jpg" class="product-img" alt="product img"></td>
-                    <td>95</td>
-                    <td>30</td>
-                    <td>170</td>
-					<td>
-                        </div></td>
-                      </tr>
-
-                 </tbody></table>
-               </div>
-	   </div>
-	 </div>
-	</div><!--End Row-->
+     <main>
+      <section class="recent-activity">
+        <div class="col-lg-12">
+          <h4>Recent Activity</h4>
+          <ul class="activity-list">
+              <li>
+                  <span class="activity-time">10:00 AM</span>
+                  <span class="activity-detail">New trip booked by John Doe</span>
+              </li>
+              <li>
+                  <span class="activity-time">09:45 AM</span>
+                  <span class="activity-detail">Driver Mark assigned to trip #1234</span>
+              </li>
+              <li>
+                  <span class="activity-time">09:30 AM</span>
+                  <span class="activity-detail">Trip #1233 completed by Driver Sarah</span>
+              </li>
+              <li>
+                  <span class="activity-time">09:15 AM</span>
+                  <span class="activity-detail">Payment received for trip #1232</span>
+              </li>
+              <li>
+                  <span class="activity-time">09:00 AM</span>
+                  <span class="activity-detail">Driver Tom rated 5 stars by customer Alice</span>
+              </li>
+              <li>
+                  <span class="activity-time">08:45 AM</span>
+                  <span class="activity-detail">Trip #1231 canceled by customer</span>
+              </li>
+              <li>
+                  <span class="activity-time">08:30 AM</span>
+                  <span class="activity-detail">New driver Sam registered</span>
+              </li>
+              <li>
+                  <span class="activity-time">08:15 AM</span>
+                  <span class="activity-detail">Trip #1230 completed by Driver Dave</span>
+              </li>
+              <li>
+                  <span class="activity-time">08:00 AM</span>
+                  <span class="activity-detail">Payment refunded for trip #1229</span>
+              </li>
+              <li>
+                  <span class="activity-time">07:45 AM</span>
+                  <span class="activity-detail">Customer feedback received for trip #1228</span>
+              </li>
+          </ul>
+          </div>
+      </section>
+  </main>
 
       <!--End Dashboard Content-->
 	  

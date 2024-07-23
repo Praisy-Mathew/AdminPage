@@ -81,7 +81,12 @@
       </li>
       <li>
         <a href="about.html">
-          <i class="zmdi zmdi-grid"></i> <span>About</span>
+          <i class="zmdi zmdi-grid"></i> <span>Services</span>
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">
+          <i class="zmdi zmdi-grid"></i> <span>Contact</span>
         </a>
       </li>
 
@@ -99,17 +104,8 @@
         </a>
       </li>
 
-      <li>
-        <a href="login.html" target="_blank">
-          <i class="zmdi zmdi-lock"></i> <span>Login</span>
-        </a>
-      </li>
 
-       <li>
-        <a href="register.html" target="_blank">
-          <i class="zmdi zmdi-account-circle"></i> <span>Registration</span>
-        </a>
-      </li>
+      
 	  
 
       <li class="sidebar-header">LABELS</li>
@@ -194,7 +190,7 @@
     <div class="container-fluid">
      
       <div class="row mt-3">
-        <div class="col-lg-6">
+        <div class="col-lg-12">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Fare Management</h5>
@@ -219,7 +215,8 @@
                     <td>30</td>
                     <td>5km</td>
                     <td>50</td>
-                    <td><btn>Edit</btn></td>
+                    <td><button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button><br>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Dele</button></td>
 					
 					
                    </tr>
@@ -231,7 +228,8 @@
                     <td>100</td>
                     <td>5km</td>
                     <td>50</td>
-                    <td>Edit</td>
+                    <td><button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button><br>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Dele</button></td>
 				</tr>
 
                  <tr>
@@ -241,7 +239,8 @@
                     <td>50</td>
                     <td>5km</td>
                     <td>30</td>
-                    <td>Edit</td>
+                    <td><button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button><br>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Dele</button></td>
 				 <tr>
                     <td>Coupe</td>
                     <td><img src="https://sara.cab/wp-content/uploads/2015/05/sedan-cheverlot-480x320.png" class="product-img" alt="product img"></td>
@@ -249,18 +248,73 @@
                     <td>50</td>
                     <td>3km</td>
                     <td>20</td>
-                    <td>Edit</td>
+                    <td><button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button><br>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Dele</button></td>
 				 <tr>
                     <td>Van</td>
-                    <td><img src="https://img.freepik.com/premium-photo/white-midsize-commercial-van-white-background-blank-body-applying-your-design-inscriptions-logos-3d-illustration_101266-22644.jpg?size=626&ext=jpg" class="product-img" alt="product img"></td>
+                    <td><img src="https://5.imimg.com/data5/QO/CY/CB/SELLER-80729603/suv-cab.png" class="product-img" alt="product img"></td>
                     <td>95</td>
                     <td>30</td>
                     <td>4km</td>
                     <td>25</td>
-                    <td>Edit</td>
+                    <td><button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button><br>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Dele</button></td>
                         </div></td>
-                      </tr>
-
+              
+                    <tbody><tr>
+                         <td>SUV</td>
+                         <td><img src="https://5.imimg.com/data5/QO/CY/CB/SELLER-80729603/suv-cab.png" class="product-img" alt="product img"></td>
+                         <td>50</td>
+                         <td>30</td>
+                         <td>5km</td>
+                         <td>50</td>
+                         <td><button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button><br>
+                          <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Dele</button></td>
+               
+               
+                        </tr>
+     
+                        <tr>
+                         <td>SEDAN</td>
+                         <td><img src="https://sara.cab/wp-content/uploads/2015/05/sedan-cheverlot-480x320.png" class="product-img" alt="product img"></td>
+                         <td>80</td>
+                         <td>100</td>
+                         <td>5km</td>
+                         <td>50</td>
+                         <td><button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button><br>
+                          <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Dele</button></td>
+             </tr>
+     
+                      <tr>
+                         <td>Crossover</td>
+                         <td><img src="https://sara.cab/wp-content/uploads/2015/05/sedan-etios--480x320.png" class="product-img" alt="product img"></td>
+                         <td>90</td>
+                         <td>50</td>
+                         <td>5km</td>
+                         <td>30</td>
+                         <td><button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button><br>
+                          <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Dele</button></td>
+              <tr>
+                         <td>Coupe</td>
+                         <td><img src="https://sara.cab/wp-content/uploads/2015/05/sedan-cheverlot-480x320.png" class="product-img" alt="product img"></td>
+                         <td>80</td>
+                         <td>50</td>
+                         <td>3km</td>
+                         <td>20</td>
+                         <td><button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button><br>
+                          <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Dele</button></td>
+              <tr>
+                         <td>Van</td>
+                         <td><img src="https://5.imimg.com/data5/QO/CY/CB/SELLER-80729603/suv-cab.png" class="product-img" alt="product img"></td>
+                         <td>95</td>
+                         <td>30</td>
+                         <td>4km</td>
+                         <td>25</td>
+                         <td><button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button><br>
+                          <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Dele</button></td>
+                             </div></td>
+                           </tr>
+        
                  </tbody></table>
                </div>
 	   </div>
